@@ -116,6 +116,7 @@
   </div>
 </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
     <script>
         WebFontConfig = {
@@ -155,8 +156,15 @@
                   }
                }
       )
+      var $body = document.body;
+      var gestos = new Hammer($body);
+      gestos.on('swiperight', function(ev) {
+        $side.classList.add('active');
+      });
+      gestos.on('swipeleft', function(ev) {
+        $side.classList.remove('active');
+      });
    </script>
     <link rel="stylesheet" href="css/styles.min.css">
-
   </body>
 </html>
