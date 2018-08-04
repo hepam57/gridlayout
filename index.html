@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pinterest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+<div class="container">
+  <div class="side" id='side'>
+    <div class="side_container">
+      <h1 class="title_platzi"><span class="icon-menu" id="burguer_button_c"></span>Platzi<span>Video</span></h1>
+      <h2>Mi PlayList</h2>
+      <ol>
+        <li><a href="#">5 Razones para escojer una laptop sobre una computadora de escritorio</a></li>
+        <li><a href="#">Muevete libremente con el nuevo servicio de limosinas en Nueva York</a></li>
+        <li><a href="#">Como cocinar un jugoso filete</a></li>
+        <li><a href="#">Como remover los calculos</a></li>
+        <li><a href="#">La ciencia de las supersticiones</a></li>
+        <li><a href="#">Como matar a tu jefe 2</a></li>
+        <li><a href="#">La vida es bella</a></li>
+        <li><a href="#">Conoce la nueva Nvidia GTX1180</a></li>
+        <li><a href="#">Adopta una mascota</a></li>
+        <li><a href="#">Como darle la vuelta al mundo en 80 dias</a></li>
+      </ol>
+      <h2>PlayLists de amigos</h2>
+      <article class="playlist_amigos">
+        <img src="images/compu.jpg" alt="profile-1">
+        <span>Felipe Neira</span>
+      </article>
+      <article class="playlist_amigos">
+        <img src="images/compu.jpg" alt="profile-2">
+        <span>Paul Dixon</span>
+      </article>
+      <article class="playlist_amigos">
+        <img src="images/compu.jpg" alt="profile-3">
+        <span>Camila Parra</span>
+      </article>
+      <hr>
+        <a href="#" class="config"><span class="icon-cog">Configuración</span></a>
+        <a href="#" class="config"><span class="icon-question">Ayuda</span></a>
+      <hr>
+      <div class="link_footer">
+        <a href="#">Acerca de Prensa Derechos de autor +PlatziVideo</a>
+      </div>
+      <div class="link_footer">
+        <a href="#">Condiciones Privacidad Politica y seguridad Prueba Nuevas Funciones</a>
+      </div>
+      <div class="link_footer">
+        <a href="#">@2018 PlatziVideo</a>
+        <a href="#">@FelipePantoja</a>
+      </div>
+    </div>
+  </div>
+  <div class="contenido">
+    <div class="nav-bar show" id='nav_bar'>
+      <h1 class="title_platzi"><span class="icon-menu" id="burguer_button"></span>Platzi<span>Video</span></h1>
+    </div>
+    <div class="video">
+      <div class="contenedor_video">
+        <iframe class="video_" src="https://www.youtube.com/embed/0grBz6kvCqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="video_footer">
+        <p>World of Warcraft - Trailer #1</p>
+        <span>4,144,886 visitas</span>
+      </div>
+    </div>
+    <div class="link_videos">
+      <div class="botones_left">
+        <a class="add_list">Agregar a mi lista</a>
+        <a href="#" class="link_videos_button"><span class="icon-share"></span> Compartir</a>
+        <a href="#" class="link_videos_button"><span class="icon-download"></span> Guardar</a>
+      </div>
+      <div class="botones_right">
+        <a href="#" class="link red">Game</a>
+        <a href="#" class="link blue">VideoGame</a>
+        <a href="#" class="link green">PlayStation</a>
+        <a href="#" class="link pink">PcGamer</a>
+      </div>
+    </div>
+    <div class="sub_contenido">
+      <div class="box_footer">
+        <h2>Comentarios</h2>
+        <article class="playlist_amigos_bigger">
+          <img src="images/compu.jpg" alt="compu.jpg">
+          <span>Felipe Neira</span>
+          <span>Algun comentario bla bla bla bla bla.</span>
+        </article>
+        <article class="playlist_amigos_bigger">
+          <img src="images/compu.jpg" alt="compu.jpg">
+          <span>Paul Dixon</span>
+          <span>Algun comentario bla bla bla bla bla.</span>
+        </article>
+        <article class="playlist_amigos_bigger">
+          <img src="images/compu.jpg" alt="compu.jpg">
+          <span>Camila Parra</span>
+          <span>Algun comentario bla bla bla bla bla.</span>
+        </article>
+      </div>
+      <div class="box_footer">
+        <h2>Sugerencias</h2>
+          <figure class="cont_img">
+            <img data-src="images/img1.jpg" alt="img1.jpg">
+            <span>La batalla contra Illidan</span>
+          </figure>
+          <figure class="cont_img" >
+            <img data-src="images/img2.jpg" alt="img2.jpg">
+            <span>La muerte de Sargeras.</span>
+          </figure>
+          <a href="#" class="button">Ver Todas</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+
+    <script>
+        WebFontConfig = {
+          google: {
+            families: ['Lato:400,700','Montserrat']
+          }
+        };
+        (function(d) {
+          var wf = d.createElement('script'),
+            s = d.scripts[0];
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+          wf.async = true;
+          s.parentNode.insertBefore(wf, s);
+        })(document);
+
+        var bLazy = new Blazy({
+          selector: 'img'
+            // options
+        });
+
+        var $nav_bar=document.getElementById('nav_bar');
+        var $burguer_button=document.getElementById('burguer_button');
+        var $burguer_button_c=document.getElementById('burguer_button_c');
+        var $side=document.getElementById('side');
+        var display=window.matchMedia('(max-width: 1055px)');
+
+        $burguer_button.addEventListener('touchstart',toggleMenu);
+        $burguer_button_c.addEventListener('touchstart',toggleMenu);
+        $burguer_button.addEventListener('click',toggleMenu);
+        $burguer_button_c.addEventListener('click',toggleMenu);
+        function toggleMenu(){
+          $side.classList.toggle('active');
+        }
+
+
+
+
+        display.addListener(function()
+                {
+                  if (display.matches) {
+                    $nav_bar.classList.add('show');
+                  }else {
+                    $nav_bar.classList.remove('show');
+                  }
+               }
+      )
+   </script>
+    <link rel="stylesheet" href="css/styles.css">
+
+  </body>
+</html>
