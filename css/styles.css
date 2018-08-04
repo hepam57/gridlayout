@@ -68,7 +68,7 @@ body{
 
 .side{
   width: 20vw;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   overflow:auto;
   background-color: #151b31;
@@ -94,7 +94,7 @@ body{
 }
  .side h2{
   color:white;
-  font-size: 20px;
+  font-size: 1.4em;
 }
 
 .side ol li{
@@ -317,10 +317,11 @@ body{
     display:inline-block;
   }
   .side{
-    left: -50vw;
-    width: 50vw;
-    z-index: 3;
-      transition: 0.2s;
+    left: -70vw;
+    width: 70vw;
+    /* height: 100vh; */
+    z-index: 2;
+      transition: 0.5s;
   }
   .active{
     left: 0;
@@ -348,5 +349,44 @@ body{
   .botones_right a{
     width: 100%;
     text-align: center;
+  }
+
+  .title_platzi{
+    font-size: 1.5rem;
+  }
+  .title_platzi span{
+    font-size: 1.5rem;
+  }
+   .side h2{
+    font-size: 1.2rem;
+  }
+
+  .side ol li{
+    font-size: 1rem;
+  }
+
+  .side ol li a{
+    font-size: 0.8rem;
+  }
+  .link_videos{
+    margin: 10px;
+  }
+
+  .link_videos a{
+    font-size: 0.8rem;
+  }
+  /* .add_list{
+    font-size: 0.7rem;
+  } */
+
+  .playlist_amigos span{
+    font-size: 1rem;
+  }
+  .config{
+    font-size: 1rem;
+  }
+
+  .link_footer a{
+    font-size: 1rem;
   }
 }
